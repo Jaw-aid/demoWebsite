@@ -32,7 +32,7 @@ calculateTotal.addEventListener('click', () => {
 
     subtotal.innerHTML = (zebraQty * zebraCost) + (lionQty * lionCost) + (elephantQty * elephantCost) + (giraffeQty * giraffeCost)
     taxTotal.innerHTML = Math.round((taxRate * subtotal.innerHTML) * 100) / 100
-    total.innerHTML = parseInt(subtotal.innerHTML) + parseInt(taxTotal.innerHTML)
+    total.innerHTML = parseFloat(subtotal.innerHTML) + parseFloat(taxTotal.innerHTML)
 })
 
 
