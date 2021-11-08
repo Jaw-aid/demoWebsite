@@ -30,9 +30,9 @@ calculateTotal.addEventListener('click', () => {
         taxRate = 0.05
     }
 
-    subtotal.innerHTML = (zebraQty * zebraCost) + (lionQty * lionCost) + (elephantQty * elephantCost) + (giraffeQty * giraffeCost)
-    taxTotal.innerHTML = Math.round((taxRate * subtotal.innerHTML) * 100) / 100
-    total.innerHTML = parseFloat(subtotal.innerHTML) + parseFloat(taxTotal.innerHTML)
+    subtotal.innerHTML = ((zebraQty * zebraCost) + (lionQty * lionCost) + (elephantQty * elephantCost) + (giraffeQty * giraffeCost)).toFixed(2)
+    taxTotal.innerHTML = (Math.round((taxRate * subtotal.innerHTML) * 100) / 100).toFixed(2)
+    total.innerHTML = (parseFloat(subtotal.innerHTML) + parseFloat(taxTotal.innerHTML)).toFixed(2)
 })
 
 
