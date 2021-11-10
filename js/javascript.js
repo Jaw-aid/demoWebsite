@@ -22,9 +22,9 @@ calculateTotal.addEventListener('click', () => {
 
     if (taxState.value == 'ca') {
         taxRate = data.taxes[0].value
-    } else if (taxState.value == 'mn') {
-        taxRate = data.taxes[1].value
     } else if (taxState.value == 'ny') {
+        taxRate = data.taxes[1].value
+    } else if (taxState.value == 'mn') {
         taxRate = data.taxes[2].value
     } else {
         taxRate = 0.05
